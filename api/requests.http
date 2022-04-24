@@ -1,0 +1,132 @@
+POST http://localhost:9595/soap2/empwebservice HTTP/1.1
+Content-Type: application/text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://interfaces.service.jets.iti.gov/">
+     <soap:Header>
+     <jets:UUID>70edb1d0-27bc-4fa5-9557-8df7c6569107</jets:UUID>
+     </soap:Header>
+
+    <soap:Body>
+        <jets:login>
+            <arg0>
+                <email>islam@gmail.com</email>
+                <password>1234</password>
+            </arg0>
+        </jets:login>
+    </soap:Body>
+</soap:Envelope>
+
+###
+POST http://localhost:9595/soap2/cardwebservice HTTP/1.1
+Content-Type: application/text/xml
+
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://interfaces.service.jets.iti.gov/">
+      <soap:Header>
+     <jets:UUID>70edb1d0-27bc-4fa5-9557-8df7c6569107</jets:UUID>
+     </soap:Header>
+
+    <soap:Body>
+        <jets:getInfo>
+            <arg0>
+                2
+            </arg0>
+        </jets:getInfo>
+    </soap:Body>
+</soap:Envelope>
+###
+###Get INFO
+###
+POST http://localhost:9595/soap2/cardwebservice HTTP/1.1
+Content-Type: application/text/xml
+
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://interfaces.service.jets.iti.gov/">
+     
+    <soap:Body>
+        <jets:getInfo>
+            <arg0>
+                2
+            </arg0>
+        </jets:getInfo>
+    </soap:Body>
+</soap:Envelope>
+###
+
+POST http://localhost:9595/soap2/empwebservice HTTP/1.1
+Content-Type: application/text/xml
+
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://interfaces.service.jets.iti.gov/">
+      <soap:Header>
+     <jets:UUID>70edb1d0-27bc-4fa5-9557-8df7c6569107</jets:UUID>
+     </soap:Header>
+
+    <soap:Body>
+        <jets:register>
+            <arg0>
+                <email>msss@gmail.com</email>
+                <name>sss</name>
+                <password>1234</password>
+                <uuid></uuid>
+            </arg0>
+            <arg1>
+                <balance>1500.0</balance>
+                <cardName>ssss</cardName>
+                <cardNumber>1234</cardNumber>
+            </arg1>
+        </jets:register>
+    </soap:Body>
+</soap:Envelope>
+
+###
+
+POST http://localhost:9595/soap2/empwebservice HTTP/1.1
+Content-Type: application/text/xml
+
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://interfaces.service.jets.iti.gov/">
+      <soap:Header>
+     <jets:UUID>70edb1d0-27bc-4fa5-9557-8df7c6569107</jets:UUID>
+     </soap:Header>
+
+    <soap:Body>
+        <jets:transaction>
+            <arg0>
+                <amount>100.0</amount>
+                <recevierEmail>ashrf@gmail.com</recevierEmail>
+                <senderEmail>etch@gmail.com</senderEmail>
+            </arg0>
+        </jets:transaction>
+    </soap:Body>
+</soap:Envelope>
+
+###
+###
+###
+POST http://localhost:9595/soapApi/userwebservice HTTP/1.1
+Content-Type: application/text/xml
+
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://interfaces.controller.jets.iti.gov/">
+
+    <soap:Body>
+        <jets:getUserbyId>
+            <arg0>
+                15
+            </arg0>
+        </jets:getUserbyId>
+    </soap:Body>
+</soap:Envelope>
