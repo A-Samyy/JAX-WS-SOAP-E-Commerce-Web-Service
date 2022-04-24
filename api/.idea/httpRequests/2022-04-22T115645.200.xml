@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns2:getUserbyIdResponse xmlns:ns2="http://interfaces.controller.jets.iti.gov/">
+            <return>
+                <email>Mariam@gmail.com</email>
+                <id>15</id>
+                <name>Mariam Mohammed</name>
+                <password>1234</password>
+                <phoneNumber>01117950454</phoneNumber>
+                <role>CUSTOMER</role>
+                <shoppingCart/>
+            </return>
+        </ns2:getUserbyIdResponse>
+    </S:Body>
+</S:Envelope>

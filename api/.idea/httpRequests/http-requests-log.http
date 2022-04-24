@@ -1,0 +1,189 @@
+POST http://localhost:9595/soapApi/userwebservice
+Content-Type: application/text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://interfaces.controller.jets.iti.gov/">
+
+    <soap:Body>
+        <jets:getUserbyId>
+            <arg0>
+                15
+            </arg0>
+        </jets:getUserbyId>
+    </soap:Body>
+</soap:Envelope>
+
+<> 2022-04-22T130339.200.xml
+
+###
+
+POST http://localhost:9595/soapApi/userwebservice
+Content-Type: application/text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://interfaces.controller.jets.iti.gov/">
+
+    <soap:Body>
+        <jets:getUserbyId>
+            <arg0>
+                15
+            </arg0>
+        </jets:getUserbyId>
+    </soap:Body>
+</soap:Envelope>
+
+<> 2022-04-22T115645.200.xml
+
+###
+
+POST http://localhost:9595/soapApi/userwebservice
+Content-Type: application/text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://interfaces.controller.jets.iti.gov/">
+
+    <soap:Body>
+        <jets:getUserbyId>
+            <arg0>
+                97
+            </arg0>
+        </jets:getUserbyId>
+    </soap:Body>
+</soap:Envelope>
+
+<> 2022-04-22T115635.500.xml
+
+###
+
+POST http://localhost:9595/soapApi/userwebservice
+Content-Type: application/text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://interfaces.controller.jets.iti.gov/">
+
+    <soap:Body>
+        <jets:getUserbyId>
+            <arg0>
+                97
+            </arg0>
+        </jets:getUserbyId>
+    </soap:Body>
+</soap:Envelope>
+
+<> 2022-04-22T115603.500.xml
+
+###
+
+POST http://localhost:9595/soapApi/userwebservice
+Content-Type: application/text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://interfaces.controller.jets.iti.gov/">
+
+    <soap:Body>
+        <jets:getUserbyId>
+            <arg0>
+                97
+            </arg0>
+        </jets:getUserbyId>
+    </soap:Body>
+</soap:Envelope>
+
+<> 2022-04-22T114152.500.xml
+
+###
+
+POST http://localhost:9595/soapApi/userwebservice
+Content-Type: application/text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://interfaces.controller.jets.iti.gov/">
+
+    <soap:Body>
+        <jets:getUserbyId>
+            <arg0>
+                97
+            </arg0>
+        </jets:getUserbyId>
+    </soap:Body>
+</soap:Envelope>
+
+<> 2022-04-22T113027.500.xml
+
+###
+
+POST http://localhost:9595/soapApi/userwebservice
+Content-Type: application/text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://interfaces.controller.jets.iti.gov/">
+      <soap:Header>
+     <jets:UUID>70edb1d0-27bc-4fa5-9557-8df7c6569107</jets:UUID>
+     </soap:Header>
+
+    <soap:Body>
+        <jets:getUserbyId>
+            <arg0>
+                97
+            </arg0>
+        </jets:getUserbyId>
+    </soap:Body>
+</soap:Envelope>
+
+<> 2022-04-22T112946.500.xml
+
+###
+
+POST http://localhost:9595/soapApi/userwebservice
+Content-Type: application/text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://interfaces.controller.jets.iti.gov/">
+      <soap:Header>
+     <jets:UUID>70edb1d0-27bc-4fa5-9557-8df7c6569107</jets:UUID>
+     </soap:Header>
+
+    <soap:Body>
+        <jets:getUserbyId>
+            <arg0>
+                12
+            </arg0>
+        </jets:getUserbyId>
+    </soap:Body>
+</soap:Envelope>
+
+<> 2022-04-22T112907.500.xml
+
+###
+
+POST http://localhost:9595/soapApi/userwebservice
+Content-Type: application/text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://interfaces.controller.jets.iti.gov/">
+      <soap:Header>
+     <jets:UUID>70edb1d0-27bc-4fa5-9557-8df7c6569107</jets:UUID>
+     </soap:Header>
+
+    <soap:Body>
+        <jets:getUserbyId>
+            <arg0>
+                12
+            </arg0>
+        </jets:getInfo>
+    </soap:Body>
+</soap:Envelope>
+
+<> 2022-04-22T112820.500.xml
+
+###
+

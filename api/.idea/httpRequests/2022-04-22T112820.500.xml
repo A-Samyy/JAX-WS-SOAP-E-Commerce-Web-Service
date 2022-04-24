@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <S:Fault xmlns:ns4="http://www.w3.org/2003/05/soap-envelope">
+            <faultcode>S:Server</faultcode>
+            <faultstring>jakarta.xml.bind.UnmarshalException
+                - with linked exception:
+                [com.ctc.wstx.exc.WstxParsingException: Unexpected close tag &lt;/jets:getInfo&gt;; expected &lt;/jets:getUserbyId&gt;.&#13;
+                at [row,col {unknown-source}]: [13,22]]
+            </faultstring>
+        </S:Fault>
+    </S:Body>
+</S:Envelope>
