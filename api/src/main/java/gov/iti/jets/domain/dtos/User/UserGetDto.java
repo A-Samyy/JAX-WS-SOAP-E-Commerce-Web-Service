@@ -24,6 +24,14 @@ public class UserGetDto {
 
     private List<String> links= new ArrayList<>();
 
+    public UserGetDto(int id, String name, String email, String phoneNumber, String password, Role role) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.password = password;
+        this.role = role;
+    }
     public UserGetDto() {
     }
     public UserGetDto(int id, String name, String email, String phoneNumber, String password, Role role, ShoppingCart shoppingCart ) {

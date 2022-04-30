@@ -11,7 +11,7 @@ import gov.iti.jets.service.interfaces.UserServiceInt;
 
 public class UserMapper {
     public static UserGetDto entityToGet( User entity ) {
-        UserGetDto getDto = new UserGetDto( entity.getId(), entity.getName(), entity.getEmail(), entity.getPhoneNumber(), entity.getPassword(), entity.getRole(), entity.getShoppingCart().get() );
+        UserGetDto getDto = new UserGetDto( entity.getId(), entity.getName(), entity.getEmail(), entity.getPhoneNumber(), entity.getPassword(), entity.getRole() );
         return getDto;
     }
 

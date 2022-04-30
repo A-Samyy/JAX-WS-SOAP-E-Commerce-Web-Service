@@ -28,8 +28,8 @@ import jakarta.persistence.*;
 
 public class App {
     public static void main( String[] args ) {
-         EntityManagerFactory emf = Persistence.createEntityManagerFactory("api");
-         EntityManager em = emf.createEntityManager();
+        //  EntityManagerFactory emf = Persistence.createEntityManagerFactory("api");
+        //  EntityManager em = emf.createEntityManager();
 //        UUID uuid = UUID.randomUUID();
 //        System.out.println(em.find( User.class , 15 )  ) ;
         // List<String> cats = new ArrayList<>();
@@ -77,12 +77,15 @@ public class App {
 //        ShoppingCartServiceInt serviceInt = new ShoppingCartServiceImpl();
 //        System.out.println(serviceInt.getUserCartitems( 13 ));
 
-        Query query= em.createQuery( "select c.cartLineItems from ShoppingCart c where c.id = :shoppingCardId" );
-        query.setParameter( "shoppingCardId",102);
-        List<CartLineItem> items =query.getResultList();
-        System.out.println( items );
+        // Query query= em.createQuery( "select c.cartLineItems from ShoppingCart c where c.id = :shoppingCardId" );
+        // query.setParameter( "shoppingCardId",102);
+        // List<CartLineItem> items =query.getResultList();
+        // System.out.println( items );
 
-         em.close();
-         emf.close();
+        //  em.close();
+        //  emf.close();
+
+//        UserInt int1 = new UserImpl();
+//        System.out.println(int1.getUsers());
     }
 }

@@ -2,6 +2,7 @@ package gov.iti.jets.service.interfaces;
 
 import java.util.List;
 
+import gov.iti.jets.domain.dtos.User.UserGetDto;
 import gov.iti.jets.domain.models.CartLineItem;
 import gov.iti.jets.domain.models.Order;
 import gov.iti.jets.domain.models.User;
@@ -9,7 +10,7 @@ import jakarta.jws.WebService;
 
 
 public interface UserServiceInt {
-    public List<User> getUsers();
+    public List<UserGetDto> getUsers();
 
     public User getUser(int id);
 

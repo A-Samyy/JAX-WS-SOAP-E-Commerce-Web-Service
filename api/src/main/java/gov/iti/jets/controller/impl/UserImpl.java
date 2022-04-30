@@ -10,9 +10,6 @@ import gov.iti.jets.domain.dtos.User.UserPutDto;
 import gov.iti.jets.domain.dtos.order.OrderGetDto;
 import gov.iti.jets.domain.dtos.util.OrderMapper;
 import gov.iti.jets.domain.dtos.util.UserMapper;
-import gov.iti.jets.domain.models.CartLineItem;
-import gov.iti.jets.domain.models.Order;
-import gov.iti.jets.domain.models.User;
 import gov.iti.jets.service.impl.UserServiceImpl;
 import gov.iti.jets.service.interfaces.UserServiceInt;
 import jakarta.jws.WebService;
@@ -22,12 +19,8 @@ public class UserImpl implements UserInt {
     UserServiceInt serviceInt = new UserServiceImpl();
 
     @Override
-    public List<UserGetDto> getUsers() {
-        List<UserGetDto> getDtos = new ArrayList<>();
-        serviceInt.getUsers().forEach( user -> {
-            getDtos.add(  UserMapper.entityToGet( user ) );
-        } );
-        return getDtos;
+    public List<UserGetDto> getUsers() { 
+        return  serviceInt.getUsers();
     }
 
     @Override

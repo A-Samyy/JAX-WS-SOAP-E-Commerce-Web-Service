@@ -1,9 +1,12 @@
 package gov.iti.jets.service.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+import gov.iti.jets.domain.dtos.User.UserGetDto;
+import gov.iti.jets.domain.dtos.util.UserMapper;
 import gov.iti.jets.domain.models.*;
 import gov.iti.jets.repository.OrderRepository;
 import gov.iti.jets.repository.ShoppingCartRepository;
@@ -23,11 +26,21 @@ public class UserServiceImpl implements UserServiceInt {
     ShoppingCartRepository shoCartRepo;
 
     @Override
-    public List<User> getUsers() {
+    public List<UserGetDto> getUsers() {
         ur = createUserRepo();
+        List<UserGetDto> getDtos = new ArrayList<>();
         List<User> findAll = ur.findAll();
-        cleaningup();
-        return findAll;
+        if(findAll.size() != 0){
+            findAll.forEach( user -> {
+                getDtos.add(  UserMapper.entityToGet( user ));
+                System.out.println("Controlllerrrr  ******"+user);
+            } );
+            cleaningup();
+            return getDtos;
+        }
+        else{
+            return null;
+        }
     }
 
     @Override
