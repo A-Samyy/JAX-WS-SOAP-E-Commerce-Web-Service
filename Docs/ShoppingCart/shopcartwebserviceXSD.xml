@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (https://github.com/eclipse-ee4j/metro-jax-ws). RI's version is JAX-WS RI 3.0.0 git-revision#af8101a. --><xs:schema xmlns:tns="http://interfaces.controller.jets.iti.gov/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://interfaces.controller.jets.iti.gov/">
+
+<xs:element name="addProductToCart" type="tns:addProductToCart"/>
+
+<xs:element name="addProductToCartResponse" type="tns:addProductToCartResponse"/>
+
+<xs:element name="cartLineItemGetDto" type="tns:cartLineItemGetDto"/>
+
+<xs:element name="cartLineItemPostDto" type="tns:cartLineItemPostDto"/>
+
+<xs:element name="cartLineItemRemoveDto" type="tns:cartLineItemRemoveDto"/>
+
+<xs:element name="getUserCartitems" type="tns:getUserCartitems"/>
+
+<xs:element name="getUserCartitemsResponse" type="tns:getUserCartitemsResponse"/>
+
+<xs:element name="orderItemsinShoppingCart" type="tns:orderItemsinShoppingCart"/>
+
+<xs:element name="orderItemsinShoppingCartResponse" type="tns:orderItemsinShoppingCartResponse"/>
+
+<xs:element name="removeProductfromCart" type="tns:removeProductfromCart"/>
+
+<xs:element name="removeProductfromCartResponse" type="tns:removeProductfromCartResponse"/>
+
+<xs:complexType name="getUserCartitems">
+<xs:sequence>
+<xs:element name="userId" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserCartitemsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cartLineItemGetDto" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cartLineItemGetDto">
+<xs:sequence>
+<xs:element name="product" type="tns:product" minOccurs="0"/>
+<xs:element name="quantity" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="product">
+<xs:sequence>
+<xs:element name="category" type="tns:category" minOccurs="0"/>
+<xs:element name="description" type="xs:string" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="price" type="xs:long"/>
+<xs:element name="quantity" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="orderItemsinShoppingCart">
+<xs:sequence>
+<xs:element name="userId" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="orderItemsinShoppingCartResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addProductToCart">
+<xs:sequence>
+<xs:element name="cartLineItemPost" type="tns:cartLineItemPostDto" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cartLineItemPostDto">
+<xs:sequence>
+<xs:element name="productId" type="xs:int"/>
+<xs:element name="quantity" type="xs:int"/>
+<xs:element name="userId" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addProductToCartResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeProductfromCart">
+<xs:sequence>
+<xs:element name="cartLineItemRemove" type="tns:cartLineItemRemoveDto" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cartLineItemRemoveDto">
+<xs:sequence>
+<xs:element name="productId" type="xs:int"/>
+<xs:element name="userId" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeProductfromCartResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="category">
+<xs:restriction base="xs:string">
+<xs:enumeration value="WHITE_CHOCOLATE"/>
+<xs:enumeration value="DARK_CHOCOLATE"/>
+<xs:enumeration value="DRINKS"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>
