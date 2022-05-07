@@ -5,6 +5,8 @@ An E-Commerce SOAP web service built using JAX-WS.
 ## 📃 Documentation
 📧[Postman SOAP API Docs](https://documenter.getpostman.com/view/20483744/UyxdL9EF)
 
+🧼 SOAPUI Reports
+
 ## Features
 * SOAP 1.1
 
