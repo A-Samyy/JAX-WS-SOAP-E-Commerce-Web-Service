@@ -30,6 +30,9 @@ mvn clean compile tomcat7:redeploy
 ```
 * SOAP: import the project into SOAP UI
 
+## 🏛 Database Schema
+![DataBase Schema](https://user-images.githubusercontent.com/95469600/167268988-1da0ebe0-127b-470e-ab33-62650e9d85bf.jpg)
+
 **🐬MySQL**
 * Create a database schema and provide the username and password in the persistence.xml
 * Hibernate will automatically create the tables for you
