@@ -1,8 +1,11 @@
 # JAX-WS-SOAP-E-Commerce-Web-Service
 An E-Commerce SOAP web service built using JAX-WS.
 
+
+## 📃 Documentation
+📧[Postman SOAP API Docs](https://documenter.getpostman.com/view/20483744/UyxdL9EF)
+
 ## Features
-* Content negotiation (support for both XML and JSON payloads and responses)
 * SOAP 1.1
 
 ## Technologies used
